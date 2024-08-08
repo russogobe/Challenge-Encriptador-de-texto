@@ -1,0 +1,277 @@
+/* Estilo base para el cuerpo de la página */
+* {
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilo para el logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    width: 10vh;
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+.logo img {
+    width: 10em;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    position: relative;
+}
+
+/* Estilo para el lado izquierdo */
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: 48vw; 
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.5em;
+}
+
+/* Estilo para el área de texto de entrada */
+.input-text {
+    width: 100%;
+    height: 80%;
+    margin-top: 4em;
+    resize: none;
+    padding: 1.2em;
+    background-color: transparent;
+    color: #0A3871;
+    border: none;
+    outline: none;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+.input-text::placeholder {
+    color: #0A3871;
+}
+
+/* Estilo para el lado derecho */
+.right-side {
+    width: 48vw; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 32px;
+    padding: 0.5em;
+}
+/* Estilo para la imagen del lado derecho */
+.message-not-found img{
+    width: 100%;
+    height: 75%;
+    background-color:transparent;
+    margin-top: 50%;
+    padding-bottom: 1em;
+}
+
+/* Estilo para el área de texto de salida */
+.output-text {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 80%; 
+    width: 90%;
+    max-width: 48vw;
+    padding: 0.5em;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.output-text::placeholder {
+    color: #495057;
+}
+
+/* Estilo para la alerta de advertencia */
+.warning {
+    display: flex;
+    white-space: nowrap;
+    color: #495057;
+    align-items: end;
+    font-weight: 500;
+    text-align: left;
+}
+
+/* Estilo para la imagen de la alerta de advertencia */
+.warning img {
+    width: 1.5em;
+    margin-right: 0.5em;
+}
+
+/* Estilo para los botones de Encriptar y Desencriptar */
+.buttons {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/* Estilo para el botón de encriptar */
+#encrypt-btn {
+    background-color: #0A3871;
+    color: white;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #0A3871;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave para cambios */
+}
+
+#encrypt-btn:enabled {
+    opacity: 1; /* Totalmente visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+#encrypt-btn:disabled {
+    opacity: 0.6; /* Menos visible */
+    cursor: not-allowed; /* Cursor para indicar deshabilitado */
+    box-shadow: none; /* Sin sombra */
+}
+
+/* Estilo para el botón de desencriptar */
+#decrypt-btn {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #0A3871;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave para cambios */
+}
+
+#decrypt-btn:enabled {
+    opacity: 1; /* Totalmente visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+#decrypt-btn:disabled {
+    opacity: 0.6; /* Menos visible */
+    cursor: not-allowed; /* Cursor para indicar deshabilitado */
+    box-shadow: none; /* Sin sombra */
+}
+
+/* Estilo para el botón de copiar */
+.button-copy {
+    background-color: white;
+    width: 80%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para el botón de copiar */
+#copy-btn {
+    background-color: white;
+    color: #0A3871;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #0A3871;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave para cambios */
+}
+
+#copy-btn:enabled {
+    opacity: 1; /* Totalmente visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+#copy-btn:disabled {
+    opacity: 0.6; /* Menos visible */
+    cursor: not-allowed; /* Cursor para indicar deshabilitado */
+    box-shadow: none; /* Sin sombra */
+}
+
+/* Estilo para el botón de resetear */
+.clear-copy {
+    background-color: white;
+    width: 80%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para el botón de copiar */
+#clear-btn {
+    background-color: white;
+    color: #0A3871;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #0A3871;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave para cambios */
+}
+
+/* Estilo para el mensaje cuando no se encuentra ningún mensaje */
+.message-not-found {
+    background-color:white;
+    color: #343A40;
+    text-align: center;
+    padding: auto;
+    width: 65%;
+    font-size: 1.5em;
+    padding-bottom: 10em;
+}
+
+/* diseño responsivo */
+
+/* Disenho para Desktop */
+@media screen and (max-width: 1024px) {
+    main {
+        flex-direction: row;
+    }
+}
+
+/* Disenho para Tablets */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Estilo para los botones de Encriptar y Desencriptar */
+    .buttons {
+        display: flex;
+        flex-direction:row;
+        gap: 1em;
+        }
+
+/* Disenho para Smartphones */
+@media screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Estilo para los botones de Encriptar y Desencriptar */
+    .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    }
+}
+}
